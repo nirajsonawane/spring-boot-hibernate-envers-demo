@@ -19,7 +19,6 @@ public class SpringBootHibernateEnversApplication {
     ApplicationRunner init(UserDetailsRepository userRepository) {
         return (ApplicationArguments args) -> dataSetup(userRepository);
     }
-
     private void dataSetup(UserDetailsRepository userRepository) {
 
         UserDetails userDetails = new UserDetails(1, "NIRAJ", "SONAWANE");
